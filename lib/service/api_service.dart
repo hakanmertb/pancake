@@ -41,11 +41,9 @@ class ApiService {
   }
 
   http.Response fakeApi(String data) {
-    log(data);
     List<String> strings = List<String>.from(json.decode(data));
 
     List<Map<String, dynamic>> response = [];
-    log('data: $data');
 
     for (String text in strings) {
       bool isPurePalindrome =
